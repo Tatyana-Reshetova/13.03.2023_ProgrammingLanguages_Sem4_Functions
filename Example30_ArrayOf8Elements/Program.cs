@@ -8,10 +8,12 @@
 Console.Clear();
 int [] array = GetBinaryArray(8);
 
-for (int i = 0; i < array.Length - 1; i++){
-    Console.Write($"{array[i]}, ");
-}
-Console.WriteLine($"{array[array.Length - 1]}");
+Console.WriteLine($"[   {String.Join(", ", array)}   ]");
+
+//for (int i = 0; i < array.Length - 1; i++){
+//   Console.Write($"{array[i]}, ");
+//}
+//Console.WriteLine($"{array[array.Length - 1]}");
 
 int [] GetBinaryArray (int size){
     int[] result = new int [size];
